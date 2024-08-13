@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transistor and transformers</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            border:2px solid;
+            width:600px;
+            height: 600px;
+            gap:10px;
+        }
+       img{
+           position: relative;
+           right: 180px;
+           top:90px;
+            width: 200px;
+            height: 200px;
+            transition: all 2s;
+        }
+        .a{
+            position: relative;
+            bottom: 200px;
+            left:30px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: aqua;
+            color:black;
+            font-size: 20px;
+        }
+        .b{
+            position: relative;
+            bottom: 200px;
+            left:40px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: aqua;
+            color:black;
+            font-size: 20px;
+        }
+        .c{
+            position: relative;
+            bottom: 200px;
+            left:60px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: aqua;
+            color:black;
+            font-size: 20px;
+        }
+        .d{
+            position: relative;
+            bottom: 200px;
+            left:80px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: aqua;
+            color:black;
+            font-size: 20px;
+        }
+        .a:hover{
+            background-color:blue;
+            color: aliceblue;
+        }
+        .b:hover{
+            background-color:rgb(151, 151, 231);
+            color: aliceblue;
+        }
+        .c:hover{
+            background-color:rgb(25, 228, 52);
+            color: aliceblue;
+        }
+        .d:hover{
+            background-color:rgb(219, 10, 10);
+            color: aliceblue;
+        }
+        .a:hover ~ img{
+            transform: rotate(3600deg);
+            cursor: pointer;
+        }
+        .b:hover ~ img{
+            transform: scale(2);
+        }
+       .c:hover ~ img{
+             transform: translate(150px,150px);
+       }
+       .d:hover ~ img{
+        transform: skewX(50deg); 
+       }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <button class="a">rotate</button>
+         <button class="b">scale</button>
+         <button class="c">translate</button>
+         <button class="d">skew</button>
+        <img src="https://th.bing.com/th/id/R.3444ff9c91c6f8ff00496e06091be373?rik=cR1yr9yLIa7b1g&riu=http%3a%2f%2f3.bp.blogspot.com%2f_YvpXQckVIuk%2fSe7WoQvxv2I%2fAAAAAAAAAI0%2fazbZNN41PpA%2fs1600%2fgold%2bstar%2bsxc&ehk=ZFLOr779%2fKkDetRQgERMyuRGkuPAzVp02ycL0WnMPr0%3d&risl=&pid=ImgRaw&r=0" alt="fan">
+        
+     </div>
+</body>
+</html>
